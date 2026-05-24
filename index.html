@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Kenangan XII.4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="welcome-screen">
+        <div class="welcome-content">
+            <h1>WELCOME TO XII.4</h1>
+            <p>Mari kembali melihat lembaran cerita indah kita di SMA.</p>
+            <button class="btn-buka" onclick="bukaWebsiteDanMusik()">Buka Kenangan</button>
+        </div>
+    </div>
+
+    <div id="main-content">
+        <nav class="navbar-hamburger">
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <div class="menu-items" id="menuLinks">
+                <a href="index.html" class="active">Home</a>
+                <a href="galeri.html">Galeri Foto</a>
+                <a href="video.html">Video</a>
+                <a href="data-kelas.html">Absen & Alamat</a>
+                <a href="kesan-pesan.html">Kesan Pesan & Wali Kelas</a>
+            </div>
+        </nav>
+
+        <div class="hero">
+            <h2>Kisah Klasik XII.4</h2>
+            <p>Setiap tawa, candaan saat jam kosong, perjuangan menghadapi tugas, hingga momen kebersamaan kita akan selalu abadi di ruang digital ini. Selamat menjelajahi memori terbaik kita!</p>
+        </div>
+    </div>
+
+    <audio id="laguKelas" src="musik/lagu1.mp3" loop preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
