@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kesan & Pesan XII.4</title>
+    <style>
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        /* Gaya Menu Navigasi */
+        nav {
+            background-color: #1e1e2f;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        nav a:hover, nav a.active {
+            color: #ff4757;
+        }
+
+        h2 {
+            color: #ff4757;
+            margin-top: 30px;
+            font-size: 2.3rem;
+        }
+
+        p.sub-title {
+            color: #b3b3b3;
+            margin-bottom: 40px;
+        }
+
+        /* --- PROFIL WALI KELAS --- */
+        .wali-kelas-container {
+            max-width: 600px;
+            margin: 0 auto 50px auto;
+            background: linear-gradient(135deg, #1e1e2f, #252538);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+            border-left: 5px solid #ff4757;
+        }
+
+        .wali-kelas-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            text-align: left;
+        }
+
+        .wali-kelas-card img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ff4757;
+        }
+
+        .wali-kelas-info h3 {
+            margin: 0 0 5px 0;
+            font-size: 1.5rem;
+            color: #ffffff;
+        }
+
+        .wali-kelas-info .jabatan {
+            color: #ff4757;
+            font-weight: bold;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .wali-kelas-info p {
+            margin: 0;
+            color: #cccccc;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+
+        /* --- KARTU KESAN & PESAN --- */
+        .grid-kesan {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 0 20px 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card-kesan {
+            background-color: #1e1e2f;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: left;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            position: relative;
+        }
+
+        .card-kesan::before {
+            content: "“";
+            font-size: 4rem;
+            color: rgba(255, 71, 87, 0.15);
+            position: absolute;
+            top: -10px;
+            left: 15px;
+            font-family: Georgia, serif;
+        }
+
+        .nama-siswa {
+            font-weight: bold;
+            color: #ff4757;
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+            border-bottom: 1px solid #2d2d3f;
+            padding-bottom: 5px;
+        }
+
+        .isi-kesan {
+            font-size: 0.95rem;
+            color: #e0e0e0;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        .isi-pesan {
+            font-size: 0.9rem;
+            color: #a0a0a0;
+            font-style: italic;
+            line-height: 1.5;
+        }
+
+        .label {
+            font-weight: 600;
+            color: #ffffff;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menu Navigasi -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="galeri.html">Galeri Foto</a>
+        <a href="video.html">Video</a>
+        <a href="data-kelas.html">Absen & Alamat</a>
+        <a href="kesan-pesan.html" class="active">Kesan Pesan & Wali Kelas</a>
+    </nav>
+
+    <h2>Wali Kelas & Kesan Pesan</h2>
+    <p class="sub-title">Ungkapan hati dan pesan mendalam dari kita untuk masa depan.</p>
+
+    <!-- SECTION WALI KELAS -->
+    <div class="wali-kelas-container">
+        <div class="wali-kelas-card">
+            <img src="img/foto1.jpg" alt="Foto Wali Kelas">
+            <div class="wali-kelas-info">
+                <h3>Nama Guru, S.Pd.</h3>
+                <div class="jabatan">Wali Kelas XII.4</div>
+                <p>"Terima kasih telah menjadi kelas yang luar biasa dan penuh warna. Raih cita-citamu setinggi langit, dan jagalah nama baik kelas kita di mana pun kalian berada."</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- GRID KESAN PESAN 35 SISWA -->
+    <div class="grid-kesan">
+
+        <!-- 1 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">AKBAR APRILLIA WICAKSONO</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> Tiga tahun di sekolah, tapi masa-masa di XII.4 yang paling gokil dan solid pas jam kosong.</div>
+            <div class="isi-pesan"><span class="label">Pesan:</span> Sukses terus semuanya, kalau udah sukses jangan pura-pura gak kenal pas ketemu di jalan.</div>
+        </div>
+
+        <!-- 2 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">AMELLISA</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> Bersyukur banget bisa dapet temen kelas yang saling bantu dan seru diajak curhat.</div>
+            <div class="isi-pesan"><span class="label">Pesan:</span> Jaga kesehatan kalian semua, semoga impian kita selepas lulus bisa terwujud!</div>
+        </div>
+
+        <!-- 3 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">AMIRA AHSANI ZAHRA</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> Bakal kangen banget sama kehebohan kelas kalau lagi gak ada guru atau pas ngerujak bareng.</div>
+            <div class="isi-pesan"><span class="label">Pesan:</span> Jangan biarkan grup WhatsApp kelas kita jadi sepi ya nanti kalau udah sibuk masing-masing.</div>
+        </div>
+
+        <!-- 4 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">ANISA RISKI OKTALIA</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> Banyak kenangan manis dan sedikit pusing pas ngerjain tugas, tapi tetep seru karena bareng kalian.</div>
+            <div class="isi-pesan"><span class="label">Pesan:</span> Tetap jadi orang baik dan tetap semangat menjalani babak baru kehidupan setelah SMA.</div>
+        </div>
+
+        <!-- 5 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">AZIZAH NUR ALFI MUDIKAH</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> Setiap sudut kelas ini punya cerita tersendiri, sedih ataupun senang kita laluinya kompak.</div>
+            <div class="isi-pesan"><span class="label">Pesan:</span> Terus melangkah maju, jangan pernah menyerah dengan keadaan ya rek!</div>
+        </div>
+
+        <!-- 6 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">CHELSEA TRI LESTARI</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> Gak berasa waktu cepet banget lewat, padahal rasanya baru kemarin kita canggung pas awal masuk kelas.</div>
+            <div class="isi-pesan"><span class="label">Pesan:</span> Semoga silaturahmi kita gak putus sampai di sini, sempatkan waktu buat reuni nanti.</div>
+        </div>
+
+        <!-- 7 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">CLAUDIO TAFFAREL SENSA</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> Suasana kelas XII.4 emang paling beda, solidaritas pas ujian atau pas olahraga bareng mantap pol.</div>
+            <div class="isi-pesan"><span class="label">Pesan:</span> Kejar apa yang kalian impikan, jalan kita masih panjang dan luas.</div>
+        </div>
+
+        <!-- 8 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">CYNTIA ELLEN</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> Teman-teman di kelas ini selalu punya cara buat bikin hari-hari sekolah jadi gak bosenin.</div>
+            <div class="isi-pesan"><span class="label">Pesan:</span> Sukses di jalur pilihan masing-masing, stay humble and stay awesome!</div>
+        </div>
+
+        <!-- 9 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">DENISA META NURVIYANTI</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> Senang bisa berbagi tawa dan ngelewati masa-masa sulit tugas sekolah sama anak-anak XII.4.</div>
+            <div class="isi-pesan"><span class="label">Pesan:</span> Terus percaya sama kemampuan diri sendiri, kalian semua orang-orang hebat.</div>
+        </div>
+
+        <!-- 10 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">DESY PUSPITA NINGRUM</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> Kebersamaan kita selama ini jadi memori terbaik yang bakal paling aku simpen rapat-rapat.</div>
+            <div class="isi-pesan"><span class="label">Pesan:</span> Semangat berjuang di luar sana, jangan lupakan kenangan manis kita di ruangan kelas ini.</div>
+        </div>
+
+        <!-- 11 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">DWI NURFITASARI</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> Belajar bareng, ketawa bareng, bahkan dihukum bareng pun pernah, itu semua berharga banget.</div>
+            <div class="isi-pesan"><span class="label">Pesan:</span> Di mana pun kalian berada nanti, semoga kebahagiaan selalu menyertai kalian semua.</div>
+        </div>
+
+        <!-- 12 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">EARLY NAZWA NAFISATUS SHOFA</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> XII.4 itu rumah kedua yang penuh warna, setiap hari selalu ada aja kelakuan absurd temen-temen.</div>
+            <div class="isi-pesan"><span class="label">Pesan:</span> Semoga sukses kuliah maupun kerjanya, jadi kebanggaan buat diri sendiri dan orang tua.</div>
+        </div>
+
+        <!-- 13 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">FADLI ROYAN FIRDAUS</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> Kelas paling santai tapi aslinya kompak banget kalau lagi ada project kelas atau acara sekolah.</div>
+            <div class="isi-pesan"><span class="label">Pesan:</span> Gas terus impian kalian, jangan kasih kendor sampai beneran dapet!</div>
+        </div>
+
+        <!-- 14 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">FAIZHA TRI ANUGRAH</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> Banyak pelajaran hidup berharga yang aku dapet dari kepribadian temen-temen yang beda-beda di sini.</div>
+            <div class="isi-pesan"><span class="label">Pesan:</span> Tetap jadi pelindung satu sama lain dalam doa, sukses buat masa depan kita semua.</div>
+        </div>
+
+        <!-- 15 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">FAREL SAPTA RAMADHAN</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> Masa SMA kerasa cepet karena circles kelas ini seru abis, solidnya gak main-main.</div>
+            <div class="isi-pesan"><span class="label">Pesan:</span> Jaga diri baik-baik rek, tunjukin kalau alumni XII.4 bisa sukses dan mandiri.</div>
+        </div>
+
+        <!-- 16 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">GRECIANDA AURA NADIVA</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> Suasana hangat di kelas ini bakal jadi hal yang paling bikin kangen setelah kita pisah nanti.</div>
+            <div class="isi-pesan"><span class="label">Pesan:</span> Jangan pernah ngerasa sendiri pas berjuang nanti, kita semua dukung dari jauh.</div>
+        </div>
+
+        <!-- 17 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">FIRDA DWI NURAMALIA</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> Makasih buat semua bantuan, tawa, dan cerita yang udah kita ukir bareng di XII.4.</div>
+            <div class="isi-pesan"><span class="label">Pesan:</span> Semoga takdir mempertemukan kita lagi dalam keadaan yang jauh lebih sukses dari sekarang.</div>
+        </div>
+
+        <!-- 18 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">M. ANAS FAHREZA</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> Dari ngerjain tugas mepet deadline sampai gibah santai di pojokan, semuanya seru parah.</div>
+            <div class="isi-pesan"><span class="label">Pesan:</span> Tetap semangat kawan, jangan lupa sesekali nongkrong bareng kalau senggang.</div>
+        </div>
+
+        <!-- 19 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">MEDINA FANI SETIYOWATI</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> Beruntung banget bisa masuk kelas ini, temen-temennya baik, asyik, dan gak pelit ilmu.</div>
+            <div class="isi-pesan"><span class="label">Pesan:</span> Jangan lupakan senyuman dan tawa yang pernah kita bagi bersama di sini ya.</div>
+        </div>
+
+        <!-- 20 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">MIFTA TAKEYA NUR ANNISA</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> Kebersamaan di kelas ini ngajarin aku arti pertemanan yang tulus tanpa mandang perbedaan.</div>
+            <div class="isi-pesan"><span class="label">Pesan:</span> Semoga jalan yang kita ambil ke depan dilapangkan dan penuh keberkahan.</div>
+        </div>
+
+        <!-- 21 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">MOHAMAD KEVIN ABDILAH</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> Gak ada kelas se-gokil XII.4, candaan-candaan random di sini selalu berhasil bikin mood balik.</div>
+            <div class="isi-pesan"><span class="label">Pesan:</span> Tetap jadi anak XII.4 yang tangguh dan selalu bersemangat raih impian!</div>
+        </div>
+
+        <!-- 22 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">MOHAMAD SABIL FIRMANSYAH</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> Kenangan bareng kalian bakal jadi cerita bagus buat masa depan, solid terus!</div>
+            <div class="isi-pesan"><span class="label">Pesan:</span> Pantang menyerah sebelum tujuan tercapai, salam kompak selalu dari saya.</div>
+        </div>
+
+        <!-- 23 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">NATASYA PRAHESTI REQITA CAHYANI</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> Sedih rasanya harus berpisah, padahal rasa kekeluargaan di kelas udah erat banget.</div>
+            <div class="isi-pesan"><span class="label">Pesan:</span> Jaga diri kalian baik-baik, raih prestasi setinggi mungkin di luar sana.</div>
+        </div>
+
+        <!-- 24 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">NAURA SHOFI SALSABILA</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> Makasih XII.4 udah nemenin masa-masa akhir SMA jadi lebih berwarna dan berkesan.</div>
+            <div class="isi-pesan"><span class="label">Pesan:</span> Doa terbaik buat kalian semua, semoga kita dipertemukan kembali dalam kesuksesan.</div>
+        </div>
+
+        <!-- 25 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">NUR SYAFIKAH RAMADHANI</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> Setiap tawa dan candaan di kelas ini bakal jadi obat kangen paling ampuh kalau lagi rindu SMA.</div>
+            <div class="isi-pesan"><span class="label">Pesan:</span> Tetaplah bersinar dengan caramu sendiri, jadilah versi terbaik dari dirimu.</div>
+        </div>
+
+        <!-- 26 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">RAFI ACHMAD SUKRISTIANTO</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> Pengalaman seru dan tak tergantikan, bangga bisa jadi bagian dari keluarga besar XII.4.</div>
+            <div class="isi-pesan"><span class="label">Pesan:</span> Jangan pernah melupakan asal-usul kita dan jalinan pertemanan di kelas ini.</div>
+        </div>
+
+        <!-- 27 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">RAHMA AMELIA ZAHRA</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> Kebersamaan kita singkat tapi nempel banget di hati, makasih buat memori indahnya ya.</div>
+            <div class="isi-pesan"><span class="label">Pesan:</span> Semoga kita semua dijauhkan dari rasa putus asa dalam mengejar masa depan.</div>
+        </div>
+
+        <!-- 28 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">RAIHAN FIRDAUST</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> Momen-momen santai berisik di kelas pas jamkos bener-bener gak ada duanya, juara wis!</div>
+            <div class="isi-pesan"><span class="label">Pesan:</span> Tetap melangkah ke depan dengan berani, tantangan baru sudah menanti kita.</div>
+        </div>
+
+        <!-- 29 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">REVALINA AFIOLA</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> Banyak suka duka yang kita lewati, tapi karena bareng-bareng semuanya kerasa lebih ringan.</div>
+            <div class="isi-pesan"><span class="label">Pesan:</span> Sukses buat semuanya, capai cita-cita kalian tanpa ragu-ragu.</div>
+        </div>
+
+        <!-- 30 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">RICHARD DWIKY ALBERTINO</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> Kebersamaan yang asyik, solid, dan selalu bikin kangen kalau libur sekolah kelamaan.</div>
+            <div class="isi-pesan"><span class="label">Pesan:</span> Semoga persahabatan kita awet terus, sukses untuk impian yang sedang dirajut.</div>
+        </div>
+
+        <!-- 31 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">RIFKY FARELL ADRIANO</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> Seru pol, kompaknya dapet, gilanya dapet, sedihnya juga dapet pas momen perpisahan gini.</div>
+            <div class="isi-pesan"><span class="label">Pesan:</span> Maju terus pantang mundur kawan, sampai bertemu di gerbang kesuksesan masing-masing!</div>
+        </div>
+
+        <!-- 32 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">RINNO SEPTA RAMADHAN</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> Terima kasih buat 35 kepala yang udah bikin cerita seru di lembaran akhir masa SMA-ku.</div>
+            <div class="isi-pesan"><span class="label">Pesan:</span> Jaga nama baik kelas kita, buktikan kalau kita semua bisa jadi orang berhasil.</div>
+        </div>
+
+        <!-- 33 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">SAKIRA RAMADHANI</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> Kelakuan random temen-temen kelas yang bikin capek belajar langsung ilang seketika.</div>
+            <div class="isi-pesan"><span class="label">Pesan:</span> Tetap semangat menjalani prosesnya, hasil terbaik menanti di ujung perjuangan.</div>
+        </div>
+
+        <!-- 34 -->
+        <div class="card-kesan">
+            <div class="nama-siswa">VICTOR HALIM MAULANA</div>
+            <div class="isi-kesan"><span class="label">Kesan:</span> Ikatan pertemanan di kelas ini kuat banget, bakal susah nyari suasana kelas sehangat ini lagi.</div>
+            <div class="isi-pesan"><span class="label">Pesan:</
