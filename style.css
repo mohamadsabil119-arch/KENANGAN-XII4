@@ -1,0 +1,182 @@
+/* ==========================================================================
+   STYLE LENGKAP & NORMAL TEMA GELAP XII.4 (DENGAN HAMBURGER MENU)
+   ========================================================================== */
+
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #121212; /* Latar belakang hitam/gelap */
+    color: #ffffff;      /* Tulisan putih */
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding-top: 60px;   /* Jarak atas agar konten tidak tertutup menu */
+}
+
+/* LAYAR PEMBUKA (WELCOME SCREEN) */
+#welcome-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1e1e2f, #111119);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: opacity 0.4s ease;
+}
+
+.welcome-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.welcome-content p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #b3b3b3;
+    padding: 0 20px;
+}
+
+/* TOMBOL UTAMA */
+.btn-buka {
+    padding: 12px 35px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #00adb5; /* Warna biru toska aksen */
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(0, 173, 181, 0.4);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-buka:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 173, 181, 0.6);
+}
+
+/* ==========================================================================
+   NAVIGASI HAMBURGER (POJOK KIRI ATAS)
+   ========================================================================== */
+
+.navbar-hamburger {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+/* Tombol Garis Tiga */
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #00adb5;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Animasi Garis Tiga Jadi Silang (X) */
+.menu-toggle.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-10px);
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Wadah List Menu Dropdown */
+.menu-items {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background-color: #1a1a2e;
+    min-width: 220px;
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    
+    /* Sembunyikan menu di awal */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-15px);
+    transition: all 0.3s ease;
+}
+
+/* Muncul saat diklik */
+.menu-items.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Link Menu */
+.menu-items a {
+    color: #cdcdcd;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.menu-items a:hover, .menu-items a.active {
+    background-color: #00adb5;
+    color: #ffffff;
+    padding-left: 25px;
+}
+
+/* AREA HERO / KONTEN UTAMA */
+.hero {
+    max-width: 600px;
+    margin: 60px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00adb5;
+}
+
+.hero p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #e0e0e0;
+}
+
+/* Efek Klik Membal */
+.menu-toggle:active,
+.menu-items a:active,
+button:active, 
+.btn-buka:active {
+    transform: scale(0.92) !important;
+}
