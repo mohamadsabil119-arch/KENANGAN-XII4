@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Kenangan XII.4</title>
+    <style>
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        /* Gaya Menu Navigasi */
+        nav {
+            background-color: #1e1e2f;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        nav a:hover, nav a.active {
+            color: #ff4757;
+        }
+
+        h2 {
+            color: #ff4757;
+            margin-top: 30px;
+            font-size: 2.3rem;
+        }
+
+        p.sub-title {
+            color: #b3b3b3;
+            margin-bottom: 40px;
+        }
+
+        /* --- LAYOUT VIDEO CONTAINER --- */
+        .video-container {
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Pembungkus Video Utama */
+        .main-video {
+            background-color: #1e1e2f;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 8px;
+            display: block;
+            background-color: #000000;
+        }
+
+        .video-info {
+            text-align: left;
+            padding: 15px 10px 5px 10px;
+        }
+
+        .video-info h3 {
+            margin: 0 0 8px 0;
+            color: #ffffff;
+            font-size: 1.4rem;
+        }
+
+        .video-info p {
+            margin: 0;
+            color: #a0a0a0;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menu Navigasi -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="galeri.html">Galeri Foto</a>
+        <a href="video.html" class="active">Video</a>
+        <a href="data-kelas.html">Absen & Alamat</a>
+        <a href="kesan-pesan.html">Kesan Pesan & Wali Kelas</a>
+    </nav>
+
+    <h2>Video Dokumenter XII.4</h2>
+    <p class="sub-title">Putar kembali momen-momen bergerak yang penuh tawa dan haru.</p>
+
+    <!-- AREA PEMUTAR VIDEO -->
+    <div class="video-container">
+        
+        <div class="main-video">
+            <!-- 
+              Jalur src di bawah ini sudah diarahkan ke folder video.
+              Silakan ganti 'cinematic.mp4' dengan nama file video aslimu.
+            -->
+            <video controls poster="video/video1.mp4">
+                <source src="video/video1.mp4" type="video/mp4">
+                Browser kamu tidak mendukung pemutaran video HTML5.
+            </video>
+            
+            <div class="video-info">
+                <h3>Cinematic Video: Akhir Sekolah Kita</h3>
+                <p>
+                    Kompilasi video pendek mulai dari keseruan jam kosong, momen ngerujak bareng di belakang kelas, 
+                    hingga persiapan ujian praktik yang melelahkan tapi ngangenin.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
